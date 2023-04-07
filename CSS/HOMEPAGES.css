@@ -1,0 +1,75 @@
+*{
+    margin: 0px;
+    padding: 0px;
+}
+body{
+    background-image: linear-gradient(teal,black);
+}
+#header{
+    width: 100%;
+    height: 400px;
+    background-image:url(../ASSET/png/spaceship.png), url(../ASSET/images/earth-ga9b0181d5_1920.jpg);
+    background-size: 120px,150% 900px;
+    background-position: right bottom, -250px 0px;
+    background-repeat: no-repeat;
+    font-size: 10px;
+    padding-top: 200px;
+    letter-spacing: 20px;
+    text-align: center;
+    box-shadow: 0px 10px 5px black;
+    transition: font-size 3s,background-size 3s,background-position 3s,transition-delay 2s;
+}
+#header:hover{
+    font-size: 50px;
+    background-size: 320px,150% 900px;
+    background-position: 400px 50px, -250px 0px;
+}
+#headingofthepage{
+    color: orange;
+    opacity: 0;
+    transition-delay: 300px;
+}
+#header:hover #headingofthepage{
+    opacity: 1;
+}
+#cur{
+    width: 100%;
+    height: 200px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+#headingcur{
+    font-size: 48px;
+    color: orange;
+}
+#paracur{
+    font-size: 26px;
+    padding-top: 30px;
+    color: orange;
+}
+#imgbuttion{
+    margin-top: 20px;
+    width: 120px;
+    height: 40px;
+    border-radius: 10px;
+    font-size: 20px;
+    background-color: white;
+    color: rgb(0, 0, 82);
+    box-shadow: 2px 2px 5px black;
+    border: none;
+}
+#vidcontainer{
+    margin-top: 80px;
+    width: 100%;
+    height: 700px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+#mainvid{
+    width: 80%;
+    border-radius: 20px;
+    box-shadow: 2px 2px 10px black;
+}

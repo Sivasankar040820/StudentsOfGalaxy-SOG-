@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Document</title>
+    <script src="../JS/planest.js" defer></script>
+    <link rel="stylesheet" href="../CSS/planest.css">
+    <link rel="stylesheet" href="../CSS/NAVBAR.css">
+</head>
+<body>
+    <div id="header">
+        <h1 id="heading">Gallary of Planets</h1>
+        <input type="button" class="b" id="left" value="<" onclick="dec()">
+        <input type="button" class="b" id="right" value=">" onclick="inc()">
+    </div>
+    <div id="navbar">
+        <ul id="mainlist">
+            <a href="../HTML/Homepages.html"><li class="mli">Home</li></a>
+            <a href="../HTML/Infopages.html"><li class="mli">Info</li></a>
+            <li class="mli" id="sublistobj">Object
+              <ul id="sublist">
+                <a href="../HTML/planest.html"><li class="sli">planets</li></a>
+                <a href="../HTML/stars.html"><li class="sli">Stars</li></a>
+                <a href="../HTML/Blackholes.html"><li class="sli">Blackhole</li></a>
+                <a href="../HTML/Astroids.html"><li class="sli">Astroids</li></a>
+                <a href="../HTML/Satellite.html"><li class="sli">Satellite</li></a>
+              </ul>          
+            </li>
+            <a href="#"><li class="mli">Logout</li></a>
+        </ul>
+    </div>
+    <div id="gallaryImages">
+        <img class="a" onclick="openImg(1, 'planest','The planets, in order of their distance outward from the Sun, are Mercury, Venus, Earth, Mars, Jupiter, Saturn, Uranus, and Neptune. Four planets—Jupiter through Neptune—have ring systems, and all but Mercury and Venus have one or more moons.')">
+        <img class="a" onclick="openImg(2, 'Earth',  'Earth is rounded into an ellipsoid with a circumference of about 40,000 km. It is the densest planet in the Solar System. Of the four rocky planets')">
+        <img class="a" onclick="openImg(3, 'Neptune','Neptune is the eighth planet from the Sun and the farthest known planet in the Solar System. It is the fourth-largest planet in the Solar System by diameter ')">
+        <img class="a" onclick="openImg(4, 'Uranus', 'Uranus is the seventh planet from the Sun. It is named after Greek sky deity Uranus  who in Greek mythology is the father of Cronus ')">
+        <img class="a" onclick="openImg(5, 'Jupiter','jupiter is the fifth planet from the Sun and the largest in the Solar System. It is a gas giant with a mass more than two and a half times that of all the other planets in the Solar System combined')">
+        <img class="a" onclick="openImg(6, 'mars',   'Mars is the fourth planet from the Sun and the second-smallest planet in the Solar System, larger only than Mercury. In the English language')">
+        <img class="a" onclick="openImg(7, 'Mercury','Mercury is the smallest planet in the Solar System and the closest to the Sun. Its orbit around the Sun takes 87.97 Earth days')">
+        <img class="a" onclick="openImg(8, 'Saturn', 'Saturn is the sixth planet from the Sun and the second-largest in the Solar System, after Jupiter. It is a gas giant with an average radius of about nine ...')">
+        <img class="a" onclick="openImg(9, 'Venus',  'Venus is the second planet from the Sun. It is sometimes called Earthsiste planet as it is almost as large and has a similar composition.')">
+        <img class="a" onclick="openImg(10,'sun','The Sun is the star at the center of the Solar System. It is a nearly perfect ball of hot plasma, heated to incandescence by nuclear fusion reactions in its')">
+    </div>
+    <div id="subWindow">
+        <h1 id="close" onclick="closeImg()">x</h1>
+        <img id="subwindowimg" src="../ASSET/images/planets.jpg" alt="">
+        <h1 id="imagHeading">planets</h1>
+        <p id="imgpara">The planets, in order of their distance outward from the Sun, are Mercury, Venus, Earth, Mars, Jupiter, Saturn, Uranus, and Neptune. Four planets—Jupiter through Neptune—have ring systems, and all but Mercury and Venus have one or more moons</p>
+    </div>
+</body>
+</html>

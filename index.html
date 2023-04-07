@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Login</title>
+    <link rel="stylesheet" href="./CSS/LOGININDEX.css">
+    <script src="./JS/LoginIdex.js" defer></script>
+</head>
+<body>
+    <div id="outerdiv">
+        <div id="innerdiv">
+            <h1 id="Heading">Login</h1>
+            <form action="">
+                <div id="emaildiv">
+                    <input type="email" id="userEmail" placeholder="Enter EmailId" class="in">
+                </div>
+                <div id="passdiv">
+                    <input type="password" id="userPass" placeholder="Enter Password" class="in">
+                    <img id="visible" src="./ASSET/png/monkeyclose.png" onmousedown="visiblePass()" onmouseup="inVisiblePass()">
+                </div>
+                <span id="status"></span>
+                <input type="button" value="Login" id="loginbut" onclick="accesstopage()">
+            </form>
+        </div>
+        <p><span>*</span> Email:sog@gmail.com & Password:sog@123</p>
+    </div>
+</body>
+</html>

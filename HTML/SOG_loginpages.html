@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Login</title>
+    <style>
+        body{
+           background-color: teal;
+        }
+        #loginWarrp{
+            width: 300px;
+            height: 300px;
+            background-color: gray;
+            position: relative;
+            top: 100px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            border-radius: 20px;
+            box-shadow: 3px 3px 5px black;
+        }
+       input{
+        width: 200px;
+        height: 30px;
+        border-radius: 20px;
+        text-align: center;
+        border: none;
+       } 
+       #lo{
+        width: 90px;
+        height: 30px;
+        cursor: pointer;
+        color: black;
+        background-color: lightblue;
+       }
+    </style>
+</head>
+<body>
+   <center>
+    <div id="loginWarrp">
+        <form action="" id="from">
+            <h3>LOGIN</h3>
+            <input type="email" name="mail" id="mailid" placeholder="EmailID" required><br><br>
+            <input type="password" name="password" id="pass" placeholder="Password" required><br><br>
+            <input id="lo" type="submit" value="Login" onclick="loginpages()">
+        </form>
+    </div>
+   </center>
+   <script>
+      function loginpages()
+      {
+        var email=document.getElementById("mail").value 
+        var password=document.getElementById("password").value
+        if(email =="sog@gmail.com " && password == "sog1234")
+        {
+            window.location.assign("Homepages.html");
+            alert("Login successfull..");
+        }
+        else{
+            alert("Invalid information");
+            return;
+        }
+      }
+   </script>
+</body>
+</html>
